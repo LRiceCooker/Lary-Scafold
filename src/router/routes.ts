@@ -1,10 +1,10 @@
 const ROUTES = {
     HOME_SCREEN: {
-        NAME: "homeScreen",
+        NAME: "/home",
         TITLE: "Home screen",
     }, 
     LOGIN_SCREEN: {
-        NAME: "loginScreen",
+        NAME: "/auth/login",
         TITLE: "login screen",
     }, 
 }

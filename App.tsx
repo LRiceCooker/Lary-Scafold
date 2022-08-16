@@ -1,12 +1,13 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import MainProvider from './src/providers/MainProvider'
 import Router from './src/router/Router'
-import HomeScreen from './src/screens/HomeScreen'
+import launchUrlResolver from './src/router/urlResolver';
 
-import {Text} from 'react-native'
-import { LaryProvider } from './src/lary';
+
 
 const App = () => {
+
   return (
       <MainProvider>
         <Router/>

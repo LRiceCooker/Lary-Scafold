@@ -2,12 +2,14 @@ import React from 'react';
 import {Element, Container, laryfy} from 'lary'
 import {Title as PaperTitle, Button as PaperButton } from 'react-native-paper'
 import {Image as NativeImage} from 'react-native'
+import { useNavigation } from '@react-navigation/native';
 
 const Title = laryfy<React.ComponentProps<typeof PaperTitle>>(PaperTitle)
 const Image = laryfy<React.ComponentProps<typeof NativeImage>>(NativeImage)
 const Button = laryfy<React.ComponentProps<typeof PaperButton>>(PaperButton)
 
 const Card = (): JSX.Element => {
+    const {navigate} = useNavigation()
     return (
         <Element m1 r4 bgWarning flexBasis={'30%'}>
             <Container column widthFull>
