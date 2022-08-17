@@ -39,6 +39,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start -c --web",
+    "build:web": "expo build:web",
     "test": "jest"
   },
   "version": "1.0.0",
