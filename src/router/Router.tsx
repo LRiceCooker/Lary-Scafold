@@ -35,7 +35,12 @@ const Router: React.FunctionComponent = () => {
     )
 
     return (
-      <NavigationContainer>
+      <NavigationContainer
+        documentTitle={{
+          formatter: (options, route) => 
+            `${(options?.title ?? route?.name).replace('/', '').replace(new RegExp('/'), ' - ')} - My Cool App`,
+        }}
+      >
         <UrlResolver/>
         <Stack.Navigator
           screenOptions={{
