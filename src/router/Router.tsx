@@ -6,6 +6,7 @@ import { NavigationContainer, useNavigation} from '@react-navigation/native';
 import HomeScreen from '../screens/HomeScreen';
 import ROUTES from "./routes";
 import launchUrlResolver from './urlResolver';
+import * as config from '../../app.json'
 
 
 enableScreens();
@@ -38,7 +39,7 @@ const Router: React.FunctionComponent = () => {
       <NavigationContainer
         documentTitle={{
           formatter: (options, route) => 
-            `${(options?.title ?? route?.name).replace('/', '').replace(new RegExp('/'), ' - ')} - My Cool App`,
+            `${(options?.title ?? route?.name).replace('/', '').replace(new RegExp('/'), ' - ')} - ${config.expo.name}`,
         }}
       >
         <UrlResolver/>
