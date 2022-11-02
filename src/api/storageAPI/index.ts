@@ -1,7 +1,9 @@
 import storageInstance from "./storageInstance";
 
-export default {
-    connect: (token: string) => {
+const storageAPI =  {
+    connect: (token: string) => { // exemple
         storageInstance.set('token', token)
     },
 }
+
+export default storageAPI

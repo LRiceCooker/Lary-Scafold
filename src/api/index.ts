@@ -1,7 +1,7 @@
 import storageAPI from "./storageAPI";
-import redditAPI from "./reddit";
+import restAPI from "./restAPI";
 
 export default {
-    storage: storageAPI, 
-    reddit: redditAPI
+    storage: storageAPI,
+    rest: restAPI,
 }
