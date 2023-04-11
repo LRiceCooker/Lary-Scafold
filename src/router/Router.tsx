@@ -6,7 +6,7 @@ import HomeScreen from '../screens/HomeScreen';
 import Menu from '../layouts/Menu';
 import ROUTES from "./routes";
 import useUrlResolver from './urlResolver';
-import * as config from '../../app.json'
+import config from '../../app.json'
 
 
 enableScreens();

@@ -1,4 +1,4 @@
-import * as config from '../../app.json'
+import config from '../../app.json'
 import ROUTES from './routes'
 
 const useUrlResolver = () => {
